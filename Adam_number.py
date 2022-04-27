@@ -1,0 +1,12 @@
+n=int(input())
+s=n*n
+#print(s)
+r=str(n)
+b=r[::-1]
+p=int(b)*int(b)
+q=str(p)
+#print(p)
+if(int(q[::-1])==s):
+    print("True")
+else:
+    print("False")
