@@ -4,6 +4,7 @@ for i in range(r):
     arr=list(map(int,input().split()))[:c]
     l.append(arr)
 s=0
+max=0
 for i in range(c):
     for j in range(r):
         s=s+l[j][i]
