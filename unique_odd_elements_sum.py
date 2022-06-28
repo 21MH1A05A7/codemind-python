@@ -1,5 +1,6 @@
 n=int(input())
 arr=list(map(int,input().split()))
+#print(arr)
 q=set(arr)
 s=0
 for i in q:
