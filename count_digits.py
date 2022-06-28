@@ -1,18 +1,14 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))[:n]
-#print(arr)
-l=[]
-d=0
-for i in range(n):
-    p=arr[i]
-    if(p==0):
-        d+=1
-    if(p<0):
-        p=p*-1
-    while(p):
-        d+=1
-        p=p//10
-    l.append(d)
-    d=0
-for i in range(n):
-    print(l[i],end=" ")
+arr=list(map(int,input().split()))
+c=0
+for i in arr:
+    if(i==0):
+        c+=1
+    if(i<0): # -24 --->24
+        i=i*-1
+    while(i): # 24,2
+                # 1,.....2
+        i=i//10 #2,..0
+        c+=1
+    print(c,end=" ")
+    c=0
