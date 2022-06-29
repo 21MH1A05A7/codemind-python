@@ -1,8 +1,10 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))[:n]
+arr=list(map(int,input().split()))
+l=[]
 for i in range(n):
     if(arr[i]%2!=0):
-        print(arr[i],end=" ")
-for i in range(n):
-    if(arr[i]%2==0):
-        print(arr[i],end=" ")
+        l.append(arr[i])
+for i in arr:
+    if(i%2==0):
+        l.append(i)
+print(*l)
