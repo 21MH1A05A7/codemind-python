@@ -1,6 +1,7 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))[:n]
-for i in range(n):
-    if(arr[i]%2==0):
-        j=arr[i]
-print(j)
+arr=list(map(int,input().split()))
+s=0
+for i in arr:
+    if(i%2==0):
+        s=i
+print(s)
