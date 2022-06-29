@@ -1,10 +1,13 @@
+def palin(n):
+    q=str(n)
+    if(q==q[::-1]):
+        return True
+    else:
+        return False
 n=int(input())
-arr=list(map(int,input().strip().split()))[:n]
+arr=list(map(int,input().split()))
 c=0
-for i in range(n):
-    q=str(arr[i])
-    r=q[::-1]
-    s=int(r)
-    if(s==arr[i]):
+for i in arr:
+    if(palin(i)):
         c+=1
 print(c)
