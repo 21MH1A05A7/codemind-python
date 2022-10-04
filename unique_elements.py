@@ -1,13 +1,7 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))[:n]
-c=0
+arr=list(map(int,input().split()))
 l=[]
-for i in range(n):
-    for j in range(n):
-        if(arr[i]==arr[j] and arr[i] not in l):
-            c+=1
-    if(c>=1):
-        l.append(arr[i])
-    c=0
-for i in range(len(l)):
-    print(l[i],end=" ")
+for i in arr:
+    if(arr.count(i)>=1 and i not in l):
+        l.append(i)
+print(*l)
