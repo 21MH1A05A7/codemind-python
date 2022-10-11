@@ -8,7 +8,6 @@ if(n>=m):
     for i in q1:
         for j in q2:
             if(i==j):
-                #print(i)
                 c+=1
                 break
 else:
