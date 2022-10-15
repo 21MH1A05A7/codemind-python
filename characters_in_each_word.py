@@ -1,5 +1,4 @@
 n=input()
-#print(n)
-q=n.split()
-for i in q:
+s=n.split()
+for i in s:
     print(len(i),end=" ")
