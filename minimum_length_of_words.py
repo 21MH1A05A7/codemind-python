@@ -1,7 +1,10 @@
 n=input()
-q=n.split()
-min=len(q[0])
-for i in q:
-    if(len(i)<min):
-        min=len(i)
-print(min)
+s=n.split()
+c=0
+l=[]
+for i in s:
+    for j in i:
+        c+=1
+    l.append(c)
+    c=0
+print(min(l))
