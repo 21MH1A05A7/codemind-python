@@ -1,3 +1,4 @@
 n=input()
 s=n.split()
-print(*s[::-1],end=' ')
+r=s[::-1]
+print(*r)
