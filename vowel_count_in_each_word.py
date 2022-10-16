@@ -1,10 +1,10 @@
 n=input()
-q=n.split()
-l=['a','e','i','o','u']
+l=n.split()
 c=0
-for i in q:
+for i in l:
     for j in i:
-        if(j in l):
+        if(j in "aeiou"):
             c+=1
+    
     print(c,end=" ")
     c=0
