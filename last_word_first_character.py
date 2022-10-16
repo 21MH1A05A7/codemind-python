@@ -1,4 +1,3 @@
 n=input()
-q=n.split()
-l=len(q)
-print(q[l-1][0])
+s=n.split()
+print(s[-1][0])
