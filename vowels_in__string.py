@@ -1,15 +1,10 @@
 n=input()
+c=0
 l=[]
-f=0
 for i in n:
-    if i in 'aeiouAEIOU' and i not in l:
+    if(i in "aeiouAEIOU" and i not in l):
         l.append(i)
         print(i,end=" ")
-        f=1
-if f==0:
+        c=1
+if(c==0):
     print("-1")
-
-
-
-
-
